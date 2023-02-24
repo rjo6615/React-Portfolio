@@ -1,60 +1,20 @@
 import React from "react";
-import {
-  AboutContent,
-  AboutDetailsContainer,
-  AboutImage,
-  AboutImageContainer,
-  Resume,
-  ResumeLink,
-  StyledAbout,
-} from "../styles/About.styled";
-import { SectionHeading, SectionTitle } from "../styles/SectionHeading";
-import { StyledParagraph } from "../styles/Typography.styled";
-import myImage from "../../assets/my-image.jpg";
-import downloadIcon from "../../assets/icons/download-icon.svg";
-import resume from "../../assets/resume.pdf";
+import Card from 'react-bootstrap/Card';
 
 const About = () => {
   return (
-    <StyledAbout id="about">
-      <SectionHeading dark="true" mb="3rem">
-        <SectionTitle dark="true" number="02">
-          About Me
-        </SectionTitle>
-      </SectionHeading>
-      <AboutContent>
-        <AboutImageContainer>
-          <AboutImage src={myImage} />
-        </AboutImageContainer>
-        <AboutDetailsContainer>
-          <StyledParagraph>
-            My name is Jericho P. Bantiquete, currently pursuing Bachelor of
-            Science in Information Technology in Pangasinan State University. I
-            am a passionate front-end developer based in Philippines.
-          </StyledParagraph>
-          <StyledParagraph>
-            I love to design and create responsive websites or web apps from
-            scratch. The technologies, tools and languages I am using to build
-            my projects are HTML, CSS, JavaScript, REACT JS, TailwindCSS,
-            Bootstrap, PHP Laravel, Git and GitHub, Figma, Adobe XD and VS Code.
-          </StyledParagraph>
-          <StyledParagraph>
-            I have eagerness to learn something new every day and I love to
-            share my knowledge to my fellow students and developers. And I am
-            looking forward to talk with you!
-          </StyledParagraph>
-          <Resume>
-            <ResumeLink
-              href={resume}
-              icon={downloadIcon}
-              download="resume-jericho-bantiquete"
-            >
-              Download Resume
-            </ResumeLink>
-          </Resume>
-        </AboutDetailsContainer>
-      </AboutContent>
-    </StyledAbout>
+    <Card style={{ maxWidth: '60rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>About</Card.Title>
+        <Card.Text>
+        I am currently learning to become a full stack web developer. I have been interested in web design 
+        and development for years taking classes in the past. I am also interested in computer and tech repair
+        having worked at a computer refurbishing company as well as UbreakIfix. I have accumulated a lot of knowledge
+        in tech and will continue to learn more in the coming months and years as I hope to start a career. 
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 
