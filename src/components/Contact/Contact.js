@@ -4,7 +4,8 @@ import Form from 'react-bootstrap/Form';
 
 function Contact() {
   return (
-    <Form>
+    <center>
+    <Form className="px-4" style={{ maxWidth: 500, minHeight: 315, maxHeight: 375, backgroundColor: "lightGray", borderRadius: 25}}>
       <Form.Group className="mb-3" controlId="formName">
         <Form.Label>Name</Form.Label>
         <Form.Control type="text" placeholder="Enter name" />
@@ -24,6 +25,7 @@ function Contact() {
         Submit
       </Button>
     </Form>
+    </center>
   );
 }
 

@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function NavbarComponent() {
   return (
-    <Navbar bg="light" expand="lg" className="shadow-lg">
+    <Navbar bg="light" expand="lg" className="shadow-lg mb-5">
       <Container fluid>
         <Navbar.Brand href="#">Robert Obernier</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

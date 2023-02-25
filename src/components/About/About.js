@@ -3,8 +3,9 @@ import Card from 'react-bootstrap/Card';
 
 const About = () => {
   return (
+    <center>
     <Card style={{ maxWidth: '60rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Img variant="top" src="./images/profile-pic.jpg" />
       <Card.Body>
         <Card.Title>About</Card.Title>
         <Card.Text>
@@ -15,6 +16,7 @@ const About = () => {
         </Card.Text>
       </Card.Body>
     </Card>
+    </center>
   );
 };
 

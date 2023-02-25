@@ -6,39 +6,63 @@ import Row from 'react-bootstrap/Row';
 function Portfolio() {
     const projects = [
         {
-          name: "Project 1",
-          link: "link 1" 
+            name: "G.R.I.M.S",
+            description: "Inventory management system",
+            link: "https://grims-inventory.herokuapp.com/",
+            image: "./images/grims.jpg" 
         },
         {
-            name: "Project 2",
-            link: "link 2" 
+            name: "Rainy Day Movies",
+            description: "Movie info lookup",
+            link: "//emilybernard.github.io/rainy-day-movies/",
+            image: "./images/rainy-day-movies.jpg" 
         },
         {
-            name: "Project 3",
-            link: "link 3" 
+            name: "Weather Dashboard",
+            description: "5 day weather forcast look up",
+            link: "//rjo6615.github.io/Weather-Dashboard/",
+            image: "./images/weather-dashboard.jpg" 
         },
         {
-            name: "Project 4",
-            link: "link 4" 
+            name: "Code Quiz",
+            description: "A timed coding quiz",
+            link: "//rjo6615.github.io/Code-Quiz/",
+            image: "./images/code-quiz.jpg" 
         },
+        {
+            name: "Password Generator",
+            description: "Unique password generator",
+            link: "//rjo6615.github.io/Password-Generator/",
+            image: "./images/password-generator.jpg" 
+        },
+        {
+            name: "Work Day Scheduler",
+            description: "Work scheduling calendar",
+            link: "https://rjo6615.github.io/Work-Day-Scheduler/",
+            image: "./images/work-day-scheduler.jpg"  
+       },
       ];
-      return projects.map((el) => {      
     return (
-      <Row xs={1} md={2} className="g-4">       
+      <center className="bg-secondary pb-4">
+      <Row xs={1} md={2} lg={3} className="g-4 mx-4">
+        {projects.map((el) => (         
           <Col>
-            <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
+          <a href={el.link} >
+            <Card style={{ maxWidth: 500, minHeight: 450, maxHeight: 350, backgroundColor: "lightGray"}}>
+              <Card.Img style={{ maxWidth: 500, minHeight: 350, maxHeight: 350 }} variant="top" src={el.image} />              
               <Card.Body>
                 <Card.Title>{el.name}</Card.Title>
                 <Card.Text>
-                {el.link}
+                {el.description}
                 </Card.Text>
               </Card.Body>
             </Card>
+            </a>
           </Col>
+          ))}
       </Row>
+      </center>
     );
-});
 }
 
 export default Portfolio;

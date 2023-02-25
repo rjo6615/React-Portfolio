@@ -27,7 +27,7 @@ function Resume() {
     <div className="resume">
       <center>
       <header className="resume-header">
-        <Document file="./resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Document file="./images/resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
           <Page  pageNumber={pageNumber} />
         </Document>
         <p> Page {pageNumber} of {numPages}</p>
