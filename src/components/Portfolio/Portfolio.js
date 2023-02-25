@@ -43,7 +43,7 @@ function Portfolio() {
        },
       ];
     return (
-      <center className="bg-secondary pb-4">
+      <center className="bg-light pb-4">
       <Row xs={1} md={2} lg={3} className="g-4 mx-4">
         {projects.map((el) => (         
           <Col>
