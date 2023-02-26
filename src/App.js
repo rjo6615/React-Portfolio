@@ -1,5 +1,6 @@
 import React from 'react';
 // import { Route, Routes, Link } from "react-router-dom";
+import {  BrowserRouter as Router,  Route,  Routes,  Navigate} from "react-router-dom";
 import About from "./components/About/About";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
@@ -76,26 +77,38 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 // }
 
 function App() {
-  let component
-  switch (window.location.pathname) {
-    case "/portfolio":
-      component = <Portfolio />
-      break  
-    case "/contact":
-      component = <Contact />
-      break  
-    case "/resume":
-      component = <Resume />
-      break; 
-    default:
-    component = <About />
-  }
+  // let component
+  // switch (window.location.pathname) {
+  //   case "/portfolio":
+  //     component = <Portfolio />
+  //     break  
+  //   case "/contact":
+  //     component = <Contact />
+  //     break  
+  //   case "/resume":
+  //     component = <Resume />
+  //     break; 
+  //   default:
+  //   component = <About />
+  // }
   return (
-    <div>
-      <Navbar />
-      {component}
-      <Footer />
-    </div>
+
+    <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/"/>} />
+        </Routes>
+        <Footer />
+    </Router>
+    // <div>
+    //   <Navbar />
+    //   {component}
+    //   <Footer />
+    // </div>
   );
 }
 
