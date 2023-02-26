@@ -43,7 +43,7 @@ function Portfolio() {
        },
       ];
     return (
-      <center className="bg-light pb-4">
+      <center className="pb-4">
         <div class="container">
       <Row xs={1} md={2} lg={3} xl={4} className="g-4 mx-4">
         {projects.map((el) => (         
@@ -61,8 +61,7 @@ function Portfolio() {
 							style={{color: "white", backgroundColor: "darkblue", borderRadius: 25}}>
                 <strong>View Live Site</strong></button>
                 </a>
-            </Card>
-            
+            </Card>            
           </Col>
           ))}
       </Row>
