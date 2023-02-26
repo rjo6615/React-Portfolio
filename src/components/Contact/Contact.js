@@ -5,7 +5,9 @@ import Form from 'react-bootstrap/Form';
 function Contact() {
   return (
     <center>
-    <Form className="px-4" style={{ maxWidth: 500, minHeight: 315, backgroundColor: "lightGray", borderRadius: 25}}>
+      <h1>Send me a message</h1>
+      <br></br>
+    <Form className="px-5" style={{ marginBottom: 200, maxWidth: 600, minHeight: 315, backgroundColor: "lightGray", borderRadius: 25}}>
       <Form.Group className="mb-3 pt-3" controlId="formName">
         <Form.Label>Name</Form.Label>
         <Form.Control type="text" placeholder="Enter name" />

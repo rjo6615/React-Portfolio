@@ -44,23 +44,29 @@ function Portfolio() {
       ];
     return (
       <center className="bg-light pb-4">
-      <Row xs={1} md={2} lg={3} className="g-4 mx-4">
+        <div class="container">
+      <Row xs={1} md={2} lg={3} xl={4} className="g-4 mx-4">
         {projects.map((el) => (         
-          <Col>
-          <a href={el.link} >
-            <Card style={{ maxWidth: 500, minHeight: 450, maxHeight: 350, backgroundColor: "lightGray"}}>
-              <Card.Img style={{ maxWidth: 500, minHeight: 350, maxHeight: 350 }} variant="top" src={el.image} />              
+          <Col>          
+            <Card style={{ maxWidth: 300, minHeight: 450, maxHeight: 350, backgroundColor: "lightGray"}}>
+              <Card.Img className="mx-auto" style={{ marginBottom: '20px', marginTop: '15px', maxWidth: '16rem', borderRadius: '25px'}} variant="top" src={el.image} />              
               <Card.Body>
                 <Card.Title>{el.name}</Card.Title>
                 <Card.Text>
                 {el.description}
                 </Card.Text>
               </Card.Body>
+              <a href={el.link} >
+              <button type="button" class="btn btn-sm mb-3 px-5"
+							style={{color: "white", backgroundColor: "darkblue", borderRadius: 25}}>
+                <strong>View Live Site</strong></button>
+                </a>
             </Card>
-            </a>
+            
           </Col>
           ))}
       </Row>
+      </div>
       </center>
     );
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
+import './about.css';
 
 const About = () => {
-  return (
+    return (
     <center>
-    <Card style={{ maxWidth: '60rem' }}>
-      <Card.Img variant="top" src="./images/profile-pic.jpg" />
+    <Card className="styles" style={{ maxWidth: '50rem', marginBottom: '200px'}}>
+      <Card.Img className="mx-auto" style={{ marginBottom: '50px', marginTop: '15px', maxWidth: '10rem', borderRadius: '100px'}} variant="top" src="./images/profile-pic.jpg" />
       <Card.Body>
         <Card.Title>About</Card.Title>
         <Card.Text>
