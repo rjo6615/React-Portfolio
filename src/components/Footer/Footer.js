@@ -40,7 +40,6 @@ export default function Footer() {
                 Full Stack Web Developer
               </h6>
               <p>
-                Gib me yob pls
               </p>
             </MDBCol>
 
@@ -72,22 +71,19 @@ export default function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
               <p>
                 <a href='#!' className='text-reset'>
-                  Pricing
+                  Github
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Settings
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Orders
                 </a>
               </p>
               <p>
                 <a href='#!' className='text-reset'>
-                  Help
                 </a>
               </p>
             </MDBCol>
