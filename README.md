@@ -28,9 +28,9 @@ In the contact section, there is a form that can be filled out to send me a mess
 
 Example images are listed below:
 
-![Nav bar](./images/about.jpg)
-![Work section](./images/portfolio.jpg)
-![Email example](./images/contact.jpg)
+![About](/images/about.jpg)
+![Portfolio](/images/portfolio.jpg)
+![Contact](/images/contact.jpg)
 
 ## Credits
 
