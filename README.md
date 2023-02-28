@@ -28,9 +28,9 @@ In the contact section, there is a form that can be filled out to send me a mess
 
 Example images are listed below:
 
-![About](/images/about.jpg)
-![Portfolio](/images/portfolio.jpg)
-![Contact](/images/contact.jpg)
+![About](/public/images/about.jpg)
+![Portfolio](/public/images/portfolio.jpg)
+![Contact](/public/images/contact.jpg)
 
 ## Credits
 
