@@ -6,6 +6,12 @@ import Row from 'react-bootstrap/Row';
 function Portfolio() {
     const projects = [
         {
+            name: "Fit Quest",
+            description: "Workout and routine creator",
+            link: "https://fitquest.herokuapp.com/",
+            image: "./images/fitquest.jpg" 
+        },
+        {
             name: "G.R.I.M.S",
             description: "Inventory management system",
             link: "https://grims-inventory.herokuapp.com/",
@@ -28,12 +34,6 @@ function Portfolio() {
             description: "A timed coding quiz",
             link: "//rjo6615.github.io/Code-Quiz/",
             image: "./images/code-quiz.jpg" 
-        },
-        {
-            name: "Password Generator",
-            description: "Unique password generator",
-            link: "//rjo6615.github.io/Password-Generator/",
-            image: "./images/password-generator.jpg" 
         },
         {
             name: "Work Day Scheduler",
