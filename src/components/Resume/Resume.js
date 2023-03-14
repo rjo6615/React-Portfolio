@@ -28,7 +28,7 @@ function Resume() {
     <div className="resume">
       <center>
       <header className="resume-header">
-        <Document file="./images/resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
+        <Document file="./images/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
           <Page  height="1500" pageNumber={pageNumber} />
         </Document>
         <div className="w-50 pb-3 pt-2" style={{backgroundColor: "lightGray", borderRadius: 25}}>
@@ -42,7 +42,7 @@ function Resume() {
         }
         <br></br>
         <br></br>
-          <a href="./images/resume.pdf" download="Robert Obernier's Resume" target='_blank'>
+          <a href="./images/Resume.pdf" download="Robert Obernier's Resume" target='_blank'>
             <button type="button" class="btn btn-success btn-lg btn-block">Download Resume</button>
           </a>
         </div>
